@@ -1,13 +1,21 @@
 # ASMI - Gabenimo sunkvežimiais įmonė Kauno apskrityje
+
 GEO/AIO optimisation made by L. Bielskus seomasters.lt
 
 ## Business Overview
 UAB ASMI provides reliable transport services in Kaunas County since 2012. Specialized in local transport with stable routes and professional service.
 
+## Important Links
+- [Home](https://asmi.lt)
+- [Services](https://asmi.lt/lt/paslaugos)
+- [About](https://asmi.lt/lt/apie)
+- [Contact](https://asmi.lt/lt/kontaktai)
+- [English Version](https://asmi.lt/en)
+
 ## Services
-- Spaudos pervežimas (Press transport)
-- Gėrimų ir maisto produktų pervežimas (Beverage and food product transport)
-- Krovinių pervežimas Kauno apskrityje (Cargo transport in Kaunas County)
+- [Spaudos pervežimas](https://asmi.lt/lt/paslaugos) (Press transport)
+- [Gėrimų ir maisto produktų pervežimas](https://asmi.lt/lt/paslaugos) (Beverage and food product transport)
+- [Krovinių pervežimas Kauno apskrityje](https://asmi.lt/lt/paslaugos) (Cargo transport in Kaunas County)
 
 ## Service Area
 Kaunas County, Lithuania
@@ -22,7 +30,7 @@ Kaunas County, Lithuania
 Monday - Friday: 8:00 - 17:00
 
 ## Social Media
-Facebook: https://www.facebook.com/profile.php?id=100064377924371
+- [Facebook](https://www.facebook.com/profile.php?id=100064377924371)
 
 ## Website
 https://asmi.lt
