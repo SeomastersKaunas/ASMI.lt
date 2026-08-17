@@ -133,6 +133,7 @@ export default function HomePage() {
         structuredData={structuredData}
       />
 
+      <main id="main-content">
       {/* Hero */}
       <section className='relative w-full overflow-hidden h-[60vh] md:h-[65vh] max-h-[600px]'>
         <div className='absolute inset-0 z-0'>
@@ -158,6 +159,7 @@ export default function HomePage() {
           <Link
             href={contactHref}
             className={`inline-block px-8 py-3 bg-primary text-white text-sm font-medium uppercase tracking-wider hover:bg-primary-dark transition-colors duration-300 ${inter.className}`}
+            aria-label={t('home.heroCta')}
           >
             {t('home.heroCta')}
           </Link>
@@ -305,6 +307,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      </main>
     </>
   );
 }

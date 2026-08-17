@@ -51,6 +51,7 @@ export default function ContactPage() {
         structuredData={structuredData}
       />
 
+      <main id="main-content">
       {/* Header */}
       <section className='bg-surface py-16 px-6 text-center'>
         <div className='max-w-3xl mx-auto'>
@@ -237,6 +238,7 @@ export default function ContactPage() {
           </div>
         </div>
       </div>
+      </main>
     </>
   );
 }

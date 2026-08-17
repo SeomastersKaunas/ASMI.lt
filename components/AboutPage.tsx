@@ -40,6 +40,7 @@ export default function AboutPage() {
         structuredData={structuredData}
       />
 
+      <main id="main-content">
       {/* Header */}
       <section className='bg-surface py-16 px-6 text-center'>
         <div className='max-w-3xl mx-auto'>
@@ -106,6 +107,7 @@ export default function AboutPage() {
           ))}
         </div>
       </section>
+      </main>
     </>
   );
 }

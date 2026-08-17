@@ -6,6 +6,7 @@ html {
   min-height: 100%;
   scroll-padding-top: 90px;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -17,6 +18,8 @@ body {
   min-height: 100%;
   position: relative;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 #__next {
@@ -32,4 +35,30 @@ body {
 img, video, iframe, svg {
   max-width: 100%;
   height: auto;
+}
+
+/* Accessibility improvements */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid #17aacd;
+  outline-offset: 2px;
+}
+
+/* Skip to main content for accessibility */
+.skip-to-content {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #17aacd;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+  transition: top 0.3s;
+}
+
+.skip-to-content:focus {
+  top: 0;
 }

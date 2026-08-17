@@ -7,6 +7,7 @@ const nextConfig = {
     formats: ['image/avif', 'image/webp'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    minimumCacheTTL: 60,
   },
   async headers() {
     const isDev = process.env.NODE_ENV === 'development';
@@ -28,7 +29,7 @@ const nextConfig = {
               "font-src 'self' data: https://fonts.gstatic.com",
               "img-src 'self' data: blob: https:",
               "frame-src 'self' https://maps.google.com https://www.google.com",
-              "connect-src 'self' https://maps.google.com https://www.google-analytics.com",
+              "connect-src 'self' https://maps.google.com https://www.google-analytics.com https://region1.google-analytics.com",
               "media-src 'self'",
               "object-src 'none'",
               "base-uri 'self'",
@@ -80,6 +81,12 @@ const nextConfig = {
         source: '/ai.txt',
         headers: [
           { key: 'Content-Type', value: 'text/plain' },
+          { key: 'Cache-Control', value: 'public, max-age=86400' },
+        ],
+      },
+      {
+        source: '/.well-known/:path*',
+        headers: [
           { key: 'Cache-Control', value: 'public, max-age=86400' },
         ],
       },
