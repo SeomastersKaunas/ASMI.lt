@@ -33,9 +33,8 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# Temp images
+# Temp images (only original jpegs, keep webp)
 public/images/asmi_hero*.jpeg
-public/images/asmi_hero*.webp
 
 # SEO optimization plan
 SEO_OPTIMIZATION_PLAN.md
