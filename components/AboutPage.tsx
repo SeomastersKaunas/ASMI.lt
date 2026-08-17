@@ -52,9 +52,9 @@ export default function AboutPage() {
 
       {/* Biography */}
       <section className='max-w-3xl mx-auto px-6 py-20'>
-        <h2 className={`text-2xl font-semibold text-text mb-6 ${inter.className}`}>
+        <h3 className={`text-2xl font-semibold text-text mb-6 ${inter.className}`}>
           {t('about.bioTitle')}
-        </h2>
+        </h3>
         <div className={`space-y-4 text-text-muted leading-relaxed ${inter.className}`}>
           <p>{t('about.bioP1')}</p>
           <p>{t('about.bioP2')}</p>
@@ -65,9 +65,9 @@ export default function AboutPage() {
       {/* Fleet */}
       <section className='bg-surface py-20 px-6'>
         <div className='max-w-4xl mx-auto text-center'>
-          <h2 className={`text-2xl font-semibold text-text mb-4 ${inter.className}`}>
+          <h3 className={`text-2xl font-semibold text-text mb-4 ${inter.className}`}>
             {t('about.fleetTitle')}
-          </h2>
+          </h3>
           <p className={`text-text-muted leading-relaxed mb-10 ${inter.className}`}>
             {t('about.fleetDesc')}
           </p>
@@ -89,9 +89,9 @@ export default function AboutPage() {
 
       {/* Advantages */}
       <section className='max-w-4xl mx-auto px-6 py-20'>
-        <h2 className={`text-2xl font-semibold text-text text-center mb-12 ${inter.className}`}>
+        <h3 className={`text-2xl font-semibold text-text text-center mb-12 ${inter.className}`}>
           {t('about.advantagesTitle')}
-        </h2>
+        </h3>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
           {[
             { Icon: FiMapPin, title: t('about.adv1Title'), desc: t('about.adv1Desc') },

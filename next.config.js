@@ -4,6 +4,9 @@ const nextConfig = {
   swcMinify: true,
   images: {
     remotePatterns: [],
+    formats: ['image/avif', 'image/webp'],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
   },
   async headers() {
     const isDev = process.env.NODE_ENV === 'development';
@@ -11,6 +14,7 @@ const nextConfig = {
       {
         source: '/(.*)',
         headers: [
+          { key: 'X-DNS-Prefetch-Control', value: 'on' },
           { key: 'X-Frame-Options', value: 'DENY' },
           { key: 'X-Content-Type-Options', value: 'nosniff' },
           { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
@@ -19,12 +23,12 @@ const nextConfig = {
             key: 'Content-Security-Policy',
             value: [
               "default-src 'self'",
-              "script-src 'self' 'unsafe-inline' https://maps.google.com",
+              "script-src 'self' 'unsafe-inline' https://maps.google.com https://www.googletagmanager.com",
               "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
-              "font-src 'self' data:",
+              "font-src 'self' data: https://fonts.gstatic.com",
               "img-src 'self' data: blob: https:",
               "frame-src 'self' https://maps.google.com https://www.google.com",
-              "connect-src 'self' https://maps.google.com",
+              "connect-src 'self' https://maps.google.com https://www.google-analytics.com",
               "media-src 'self'",
               "object-src 'none'",
               "base-uri 'self'",
@@ -58,6 +62,27 @@ const nextConfig = {
           { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },
         ],
       },
+      {
+        source: '/llms.txt',
+        headers: [
+          { key: 'Content-Type', value: 'text/plain' },
+          { key: 'Cache-Control', value: 'public, max-age=86400' },
+        ],
+      },
+      {
+        source: '/llms-full.txt',
+        headers: [
+          { key: 'Content-Type', value: 'text/plain' },
+          { key: 'Cache-Control', value: 'public, max-age=86400' },
+        ],
+      },
+      {
+        source: '/ai.txt',
+        headers: [
+          { key: 'Content-Type', value: 'text/plain' },
+          { key: 'Cache-Control', value: 'public, max-age=86400' },
+        ],
+      },
     ];
   },
   async redirects() {
@@ -73,7 +98,7 @@ const nextConfig = {
   },
   compress: true,
   poweredByHeader: false,
-  generateEtags: false,
+  generateEtags: true,
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
   },

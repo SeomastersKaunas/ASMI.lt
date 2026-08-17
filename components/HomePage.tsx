@@ -142,7 +142,7 @@ export default function HomePage() {
             fill
             className='object-cover object-center'
             priority
-            sizes='100vw'
+            sizes='(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 60vw'
           />
           {/* Gray overlay for faded look */}
           <div className='absolute inset-0 bg-gray-600/55' />
@@ -166,9 +166,9 @@ export default function HomePage() {
 
       {/* About preview */}
       <section className='max-w-4xl mx-auto px-6 py-20 text-center'>
-        <h2 className={`text-2xl md:text-3xl font-semibold text-text mb-6 ${inter.className}`}>
+        <h3 className={`text-2xl md:text-3xl font-semibold text-text mb-6 ${inter.className}`}>
           {t('home.aboutTitle')}
-        </h2>
+        </h3>
         <p className={`text-text-muted leading-relaxed text-base mb-8 ${inter.className}`}>
           {t('home.aboutText')}
         </p>
@@ -183,9 +183,9 @@ export default function HomePage() {
       {/* Services preview */}
       <section className='bg-surface py-20 px-6'>
         <div className='max-w-5xl mx-auto'>
-          <h2 className={`text-2xl md:text-3xl font-semibold text-text text-center mb-3 ${inter.className}`}>
+          <h3 className={`text-2xl md:text-3xl font-semibold text-text text-center mb-3 ${inter.className}`}>
             {t('home.servicesTitle')}
-          </h2>
+          </h3>
           <p className={`text-text-muted text-center mb-12 ${inter.className}`}>
             {t('home.servicesSubtitle')}
           </p>
@@ -235,9 +235,9 @@ export default function HomePage() {
 
       {/* Why ASMI */}
       <section className='max-w-3xl mx-auto px-6 py-20 text-center'>
-        <h2 className={`text-2xl md:text-3xl font-semibold text-text mb-6 ${inter.className}`}>
+        <h3 className={`text-2xl md:text-3xl font-semibold text-text mb-6 ${inter.className}`}>
           {t('home.whyTitle')}
-        </h2>
+        </h3>
         <p className={`text-text-muted leading-relaxed text-base ${inter.className}`}>
           {t('home.whyText')}
         </p>
@@ -245,9 +245,9 @@ export default function HomePage() {
 
       {/* CTA */}
       <section className='bg-primary py-20 px-6 text-center'>
-        <h2 className={`text-2xl md:text-3xl font-semibold text-white mb-4 ${inter.className}`}>
+        <h3 className={`text-2xl md:text-3xl font-semibold text-white mb-4 ${inter.className}`}>
           {t('home.ctaTitle')}
-        </h2>
+        </h3>
         <p className={`text-white/90 mb-8 max-w-xl mx-auto ${inter.className}`}>
           {t('home.ctaText')}
         </p>
@@ -262,9 +262,9 @@ export default function HomePage() {
       {/* Google Maps */}
       <section className='py-20 px-6'>
         <div className='max-w-4xl mx-auto'>
-          <h2 className={`text-2xl md:text-3xl font-semibold text-text text-center mb-8 ${inter.className}`}>
+          <h3 className={`text-2xl md:text-3xl font-semibold text-text text-center mb-8 ${inter.className}`}>
             {isLithuanian ? 'Mūsų vieta' : 'Our location'}
-          </h2>
+          </h3>
           <div className='w-full border border-border overflow-hidden relative' style={{ height: '400px' }}>
             <iframe
               src='https://maps.google.com/maps?q=ASMI%20Pramon%C4%97s%20pr.%204L%20Kaunas&z=15&output=embed'

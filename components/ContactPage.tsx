@@ -65,9 +65,9 @@ export default function ContactPage() {
         <div className='grid grid-cols-1 md:grid-cols-2 gap-14 items-start'>
           {/* Contact info */}
           <div>
-            <h2 className={`text-2xl font-semibold text-text mb-4 ${inter.className}`}>
+            <h3 className={`text-2xl font-semibold text-text mb-4 ${inter.className}`}>
               {t('contact.infoTitle')}
-            </h2>
+            </h3>
             <p className={`text-text-muted text-sm leading-relaxed mb-8 ${inter.className}`}>
               {t('contact.infoText')}
             </p>
@@ -127,9 +127,9 @@ export default function ContactPage() {
 
           {/* Contact form */}
           <div>
-            <h2 className={`text-2xl font-semibold text-text mb-6 ${inter.className}`}>
+            <h3 className={`text-2xl font-semibold text-text mb-6 ${inter.className}`}>
               {t('contact.formTitle')}
-            </h2>
+            </h3>
 
             {status === 'sent' ? (
               <div className={`text-center py-12 ${inter.className}`}>
