@@ -21,17 +21,20 @@
     {
       "name": "Spaudos pervežimas",
       "name_en": "Press Transport",
-      "description": "Spaudos paskirstymas į prekybos centrus visoje Kauno apskrityje. Patikimas ir laiku atliktas pristatymas."
+      "description": "Spaudos paskirstymas į prekybos centrus visoje Kauno apskrityje. Patikimas ir laiku atliktas pristatymas.",
+      "url": "https://asmi.lt/lt/paslaugos"
     },
     {
       "name": "Gėrimų ir maisto produktų pervežimas",
       "name_en": "Beverage & Food Transport",
-      "description": "Gėrimų ir maisto produktų pervežimas ir paskirstymas (be temperatūrinio režimo) Kauno apskrityje."
+      "description": "Gėrimų ir maisto produktų pervežimas ir paskirstymas (be temperatūrinio režimo) Kauno apskrityje.",
+      "url": "https://asmi.lt/lt/paslaugos"
     },
     {
       "name": "Krovinių pervežimas Kauno apskrityje",
       "name_en": "Cargo Transport in Kaunas County",
-      "description": "Krovinių pervežimas Kauno apskrityje. Lankstus ir patikimas transportas įvairiems kroviniams."
+      "description": "Krovinių pervežimas Kauno apskrityje. Lankstus ir patikimas transportas įvairiems kroviniams.",
+      "url": "https://asmi.lt/lt/paslaugos"
     }
   ],
   "location": {
@@ -52,6 +55,13 @@
   },
   "social_media": {
     "facebook": "https://www.facebook.com/profile.php?id=100064377924371"
+  },
+  "links": {
+    "home": "https://asmi.lt",
+    "services": "https://asmi.lt/lt/paslaugos",
+    "about": "https://asmi.lt/lt/apie",
+    "contact": "https://asmi.lt/lt/kontaktai",
+    "english": "https://asmi.lt/en"
   },
   "keywords": [
     "pervežimai Kaune",
