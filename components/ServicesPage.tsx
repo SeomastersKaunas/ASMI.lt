@@ -3,7 +3,7 @@ import { inter } from '../lib/fonts';
 import { useLocalePath } from '../lib/useLocalePath';
 import useTranslation from '../lib/translation';
 import SEOHead from '../components/SEOHead';
-import { FiBookOpen, FiTruck, FiMapPin, FiCheckCircle } from 'react-icons/fi';
+import { FiBookOpen, FiTruck, FiMapPin, FiCheckCircle, FiPackage } from 'react-icons/fi';
 
 export default function ServicesPage() {
   const { prefix, isLithuanian } = useLocalePath();
@@ -46,7 +46,7 @@ export default function ServicesPage() {
 
       {/* Service cards */}
       <section className='max-w-5xl mx-auto px-6 py-20'>
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
           <div className='bg-white p-8 border border-border hover:border-primary transition-colors duration-300'>
             <FiBookOpen className='w-8 h-8 text-primary mb-6' />
             <h2 className={`text-xl font-semibold text-text mb-4 ${inter.className}`}>
@@ -64,6 +64,16 @@ export default function ServicesPage() {
             </h2>
             <p className={`text-text-muted text-sm leading-relaxed ${inter.className}`}>
               {t('services.s2Desc')}
+            </p>
+          </div>
+
+          <div className='bg-white p-8 border border-border hover:border-primary transition-colors duration-300'>
+            <FiPackage className='w-8 h-8 text-primary mb-6' />
+            <h2 className={`text-xl font-semibold text-text mb-4 ${inter.className}`}>
+              {t('services.s3Title')}
+            </h2>
+            <p className={`text-text-muted text-sm leading-relaxed ${inter.className}`}>
+              {t('services.s3Desc')}
             </p>
           </div>
         </div>

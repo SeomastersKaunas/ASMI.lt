@@ -1,0 +1,70 @@
+{
+  "business": {
+    "name": "UAB ASMI",
+    "category": "Gabenimo sunkvežimiais įmonė",
+    "established": "2012",
+    "description": "Reliable transport services in Kaunas County since 2012. Specialized in press transport, beverage and food product transport, and cargo transport.",
+    "website": "https://asmi.lt",
+    "company_code": "302767490"
+  },
+  "contact": {
+    "phone": "0 699 55433",
+    "email": "info@asmi.lt",
+    "address": {
+      "street": "Pramonės pr. 4L",
+      "city": "Kaunas",
+      "postal_code": "51329",
+      "country": "Lithuania"
+    }
+  },
+  "services": [
+    {
+      "name": "Spaudos pervežimas",
+      "name_en": "Press Transport",
+      "description": "Spaudos paskirstymas į prekybos centrus visoje Kauno apskrityje. Patikimas ir laiku atliktas pristatymas."
+    },
+    {
+      "name": "Gėrimų ir maisto produktų pervežimas",
+      "name_en": "Beverage & Food Transport",
+      "description": "Gėrimų ir maisto produktų pervežimas ir paskirstymas (be temperatūrinio režimo) Kauno apskrityje."
+    },
+    {
+      "name": "Krovinių pervežimas Kauno apskrityje",
+      "name_en": "Cargo Transport in Kaunas County",
+      "description": "Krovinių pervežimas Kauno apskrityje. Lankstus ir patikimas transportas įvairiems kroviniams."
+    }
+  ],
+  "location": {
+    "service_area": "Kaunas County",
+    "coordinates": {
+      "latitude": 54.9337569,
+      "longitude": 23.9666759
+    }
+  },
+  "hours": {
+    "monday": "8:00-17:00",
+    "tuesday": "8:00-17:00",
+    "wednesday": "8:00-17:00",
+    "thursday": "8:00-17:00",
+    "friday": "8:00-17:00",
+    "saturday": "Closed",
+    "sunday": "Closed"
+  },
+  "social_media": {
+    "facebook": "https://www.facebook.com/profile.php?id=100064377924371"
+  },
+  "keywords": [
+    "pervežimai Kaune",
+    "pervežimai Kauno apskrityje",
+    "spaudos pervežimas Kaune",
+    "spaudos paskirstymas prekybos centrams",
+    "gėrimų pervežimas Kaune",
+    "maisto produktų pervežimas",
+    "krovinių pervežimas Kaune",
+    "logistikos paslaugos Kaune",
+    "vietiniai pervežimai Kauno apskrityje",
+    "prekių paskirstymas Kaune"
+  ],
+  "languages": ["lt", "en"],
+  "optimization": "GEO/AIO optimisation made by L. Bielskus seomasters.lt"
+}

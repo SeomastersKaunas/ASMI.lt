@@ -29,7 +29,7 @@ const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://asmi.lt';
 export default function SEOHead({
   title,
   description,
-  keywords = 'pervežimai, logistika, spaudos pervežimas, maisto pervežimas, gėrimų pervežimas, Kaunas, Kauno apskritis, ASMI, transport, logistics, press delivery, food transport, beverage transport',
+  keywords = 'pervežimai Kaune, pervežimai Kauno apskrityje, spaudos pervežimas Kaune, spaudos paskirstymas prekybos centrams, gėrimų pervežimas Kaune, maisto produktų pervežimas, krovinių pervežimas Kaune, logistikos paslaugos Kaune, vietiniai pervežimai Kauno apskrityje, prekių paskirstymas Kaune',
   canonicalUrl,
   ogImage = '/images/og-image.jpg',
   structuredData,

@@ -11,10 +11,26 @@ const PAGES = [
   { path: '/en/services', priority: '0.8', changefreq: 'monthly' },
   { path: '/en/about', priority: '0.7', changefreq: 'monthly' },
   { path: '/en/contact', priority: '0.7', changefreq: 'monthly' },
+  // AI files
+  { path: '/llms.txt', priority: '0.5', changefreq: 'monthly' },
+  { path: '/llms-full.txt', priority: '0.5', changefreq: 'monthly' },
+  { path: '/ai.txt', priority: '0.5', changefreq: 'monthly' },
+  { path: '/.well-known/security.txt', priority: '0.3', changefreq: 'yearly' },
 ];
 
 export default function handler(_req: NextApiRequest, res: NextApiResponse) {
   const urls = PAGES.map((page) => {
+    // AI files don't need language alternates
+    const isAIFile = page.path.startsWith('/llms') || page.path.startsWith('/ai') || page.path.startsWith('/.well-known');
+    
+    if (isAIFile) {
+      return `  <url>
+    <loc>${BASE_URL}${page.path}</loc>
+    <changefreq>${page.changefreq}</changefreq>
+    <priority>${page.priority}</priority>
+  </url>`;
+    }
+
     const alternates = page.path.startsWith('/lt')
       ? [
           { hreflang: 'lt', href: `${BASE_URL}${page.path}` },

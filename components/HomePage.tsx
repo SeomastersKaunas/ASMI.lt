@@ -4,7 +4,7 @@ import { inter } from '../lib/fonts';
 import { useLocalePath } from '../lib/useLocalePath';
 import useTranslation from '../lib/translation';
 import SEOHead from '../components/SEOHead';
-import { FiBookOpen, FiTruck } from 'react-icons/fi';
+import { FiBookOpen, FiTruck, FiPackage } from 'react-icons/fi';
 
 export default function HomePage() {
   const { prefix, isLithuanian } = useLocalePath();
@@ -20,7 +20,7 @@ export default function HomePage() {
     '@type': 'LocalBusiness',
     name: 'UAB ASMI',
     url: 'https://asmi.lt',
-    telephone: '+37069955433',
+    telephone: '069955433',
     email: 'info@asmi.lt',
     address: {
       '@type': 'PostalAddress',
@@ -34,6 +34,89 @@ export default function HomePage() {
     description: isLithuanian
       ? 'Pervežimų ir logistikos paslaugos Kauno apskrityje. Spaudos, gėrimų ir maisto produktų pervežimas.'
       : 'Transport and logistics services in Kaunas County. Press, beverage and food product transport.',
+    openingHoursSpecification: [
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: 'http://schema.org/Monday',
+        opens: '08:00',
+        closes: '17:00',
+      },
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: 'http://schema.org/Tuesday',
+        opens: '08:00',
+        closes: '17:00',
+      },
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: 'http://schema.org/Wednesday',
+        opens: '08:00',
+        closes: '17:00',
+      },
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: 'http://schema.org/Thursday',
+        opens: '08:00',
+        closes: '17:00',
+      },
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: 'http://schema.org/Friday',
+        opens: '08:00',
+        closes: '17:00',
+      },
+    ],
+    sameAs: [
+      'https://www.facebook.com/profile.php?id=100064377924371',
+    ],
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: isLithuanian ? 'Paslaugos' : 'Services',
+      itemListElement: [
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: isLithuanian ? 'Spaudos pervežimas' : 'Press Transport',
+            description: isLithuanian
+              ? 'Spaudos paskirstymas į prekybos centrus visoje Kauno apskrityje.'
+              : 'Press distribution to shopping centers throughout Kaunas County.',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: isLithuanian ? 'Gėrimų ir maisto produktų pervežimas' : 'Beverage & Food Transport',
+            description: isLithuanian
+              ? 'Gėrimų ir maisto produktų pervežimas ir paskirstymas Kauno apskrityje.'
+              : 'Beverage and food product transport and distribution in Kaunas County.',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: isLithuanian ? 'Krovinių pervežimas Kauno apskrityje' : 'Cargo Transport in Kaunas County',
+            description: isLithuanian
+              ? 'Krovinių pervežimas Kauno apskrityje. Lankstus ir patikimas transportas.'
+              : 'Cargo transport in Kaunas County. Flexible and reliable transport.',
+          },
+        },
+      ],
+    },
+    keywords: [
+      'pervežimai Kaune',
+      'pervežimai Kauno apskrityje',
+      'spaudos pervežimas Kaune',
+      'spaudos paskirstymas prekybos centrams',
+      'gėrimų pervežimas Kaune',
+      'maisto produktų pervežimas',
+      'krovinių pervežimas Kaune',
+      'logistikos paslaugos Kaune',
+      'vietiniai pervežimai Kauno apskrityje',
+      'prekių paskirstymas Kaune',
+    ],
   };
 
   const servicesHref = isLithuanian ? `${prefix}/paslaugos` : `${prefix}/services`;
@@ -54,7 +137,7 @@ export default function HomePage() {
       <section className='relative w-full overflow-hidden h-[60vh] md:h-[65vh] max-h-[600px]'>
         <div className='absolute inset-0 z-0'>
           <Image
-            src='/images/hero-truck.jpg'
+            src='/images/asmi_hero_2.webp'
             alt='ASMI transport'
             fill
             className='object-cover object-center'
@@ -107,12 +190,12 @@ export default function HomePage() {
             {t('home.servicesSubtitle')}
           </p>
 
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
             <div className='bg-white p-8 border border-border hover:border-primary transition-colors duration-300'>
               <FiBookOpen className='w-8 h-8 text-primary mb-5' />
-              <h3 className={`text-xl font-semibold text-text mb-3 ${inter.className}`}>
+              <h2 className={`text-xl font-semibold text-text mb-3 ${inter.className}`}>
                 {t('home.service1Title')}
-              </h3>
+              </h2>
               <p className={`text-text-muted text-sm leading-relaxed ${inter.className}`}>
                 {t('home.service1Desc')}
               </p>
@@ -120,11 +203,21 @@ export default function HomePage() {
 
             <div className='bg-white p-8 border border-border hover:border-primary transition-colors duration-300'>
               <FiTruck className='w-8 h-8 text-primary mb-5' />
-              <h3 className={`text-xl font-semibold text-text mb-3 ${inter.className}`}>
+              <h2 className={`text-xl font-semibold text-text mb-3 ${inter.className}`}>
                 {t('home.service2Title')}
-              </h3>
+              </h2>
               <p className={`text-text-muted text-sm leading-relaxed ${inter.className}`}>
                 {t('home.service2Desc')}
+              </p>
+            </div>
+
+            <div className='bg-white p-8 border border-border hover:border-primary transition-colors duration-300'>
+              <FiPackage className='w-8 h-8 text-primary mb-5' />
+              <h2 className={`text-xl font-semibold text-text mb-3 ${inter.className}`}>
+                {t('home.service3Title')}
+              </h2>
+              <p className={`text-text-muted text-sm leading-relaxed ${inter.className}`}>
+                {t('home.service3Desc')}
               </p>
             </div>
           </div>

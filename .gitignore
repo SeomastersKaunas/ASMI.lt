@@ -32,3 +32,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Temp images
+public/images/asmi_hero*.jpeg
+public/images/asmi_hero*.webp
+
+# SEO optimization plan
+SEO_OPTIMIZATION_PLAN.md
+
+# SEO optimization plan
+SEO_OPTIMIZATION_PLAN.md

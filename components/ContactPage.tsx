@@ -29,8 +29,8 @@ export default function ContactPage() {
 
   const title = isLithuanian ? 'Kontaktai' : 'Contact';
   const description = isLithuanian
-    ? 'Susisiekite su ASMI. Telefonas: +370 699 55433, el. paštas: info@asmi.lt. Adresas: Kaunas, Pramonės pr. 4L, 51329.'
-    : 'Get in touch with ASMI. Phone: +370 699 55433, email: info@asmi.lt. Address: Kaunas, Pramonės pr. 4L, 51329.';
+    ? 'Susisiekite su ASMI. Telefonas: 0 699 55433, el. paštas: info@asmi.lt. Adresas: Kaunas, Pramonės pr. 4L, 51329.'
+    : 'Get in touch with ASMI. Phone: 0 699 55433, email: info@asmi.lt. Address: Kaunas, Pramonės pr. 4L, 51329.';
 
   const structuredData = {
     '@context': 'https://schema.org',
@@ -81,7 +81,7 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <a href='tel:+37069955433' className='flex items-start gap-3 hover:text-primary transition-colors'>
+              <a href='tel:069955433' className='flex items-start gap-3 hover:text-primary transition-colors'>
                 <FiPhone className='w-5 h-5 shrink-0 text-primary mt-0.5' />
                 <div>
                   <p className='text-text font-medium'>{t('contact.phoneLabel')}</p>

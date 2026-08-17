@@ -1,0 +1,19 @@
+# Security Policy for ASMI Website
+GEO/AIO optimisation made by L. Bielskus seomasters.lt
+
+Contact: info@asmi.lt
+Expires: 2027-12-31T23:59:59.000Z
+Preferred-Languages: lt, en
+Canonical: https://asmi.lt/.well-known/security.txt
+
+# Security Reporting
+# If you discover a security vulnerability, please report it to us responsibly.
+
+# Encryption
+# Our website uses HTTPS for all connections
+
+# Data Protection
+# We comply with GDPR and Lithuanian data protection regulations
+
+# Acknowledgments
+# We appreciate responsible security disclosures

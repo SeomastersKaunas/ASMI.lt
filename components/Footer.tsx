@@ -84,7 +84,7 @@ export default function Footer() {
                 <FiMapPin className='w-4 h-4 shrink-0 text-primary mt-0.5' />
                 {t('footer.address')}
               </p>
-              <a href='tel:+37069955433' className='flex items-center gap-2 hover:text-primary transition-colors'>
+              <a href='tel:069955433' className='flex items-center gap-2 hover:text-primary transition-colors'>
                 <FiPhone className='w-4 h-4 shrink-0 text-primary' />
                 {t('footer.phone')}
               </a>
