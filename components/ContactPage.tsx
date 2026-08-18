@@ -115,11 +115,11 @@ export default function ContactPage() {
               </h3>
               <div className='w-full border border-border overflow-hidden relative' style={{ height: '300px' }}>
                 <iframe
-                  src='https://maps.google.com/maps?q=ASMI%20Pramon%C4%97s%20pr.%204L%20Kaunas&z=15&output=embed'
+                  src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2828.52214220985!2d23.97752887712796!3d54.9050164569691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e718fc585323b5%3A0xa723bcba7d87e7a2!2sASMI!5e1!3m2!1slt!2slt!4v1787031436007!5m2!1slt!2slt'
                   style={{ border: 0, position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
                   allowFullScreen
                   loading='lazy'
-                  referrerPolicy='no-referrer-when-downgrade'
+                  referrerPolicy='strict-origin-when-cross-origin'
                   title='ASMI location'
                 />
               </div>

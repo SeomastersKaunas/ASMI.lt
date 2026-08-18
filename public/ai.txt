@@ -1,7 +1,7 @@
 {
   "business": {
     "name": "UAB ASMI",
-    "category": "Gabenimo sunkvežimiais įmonė",
+    "category": "Transporto paslaugos",
     "established": "2012",
     "description": "Reliable transport services in Kaunas County since 2012. Specialized in press transport, beverage and food product transport, and cargo transport.",
     "website": "https://asmi.lt",
